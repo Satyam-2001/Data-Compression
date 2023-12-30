@@ -1,12 +1,30 @@
 {
   "name": "data-compression",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "",
-  "type": "module",
-  "main": "index.js",
+  "main": "dist/cjs/index.js",
+  "module": "dist/mjs/index.js",
+  "exports": {
+    ".": {
+      "import": "./dist/mjs/index.js",
+      "require": "./dist/cjs/index.js"
+    }
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "Satyam Lohiya",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Satyam-2001/Data-Compression.git"
+  },
+  "keywords": [
+    "data-compression",
+    "compression",
+    "huffman",
+    "uri-friendly",
+    "encode",
+    "decode"
+  ]
 }

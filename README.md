@@ -35,7 +35,7 @@ const { encodedData, compression_ratio, binaryEnocded } = encode(dataToEncode);
 // Decode data
 const decodedData = decode(encodedData);
 
-console.log('Compression Ratio', compression_ratio, '%')
+console.log('Compression Ratio', compression_ratio)
 console.log('Binary Encoded Data', binaryEnocded)
 console.log('Original Data:', dataToEncode);
 console.log('Encoded Data:', encodedData);
